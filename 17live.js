@@ -25,7 +25,7 @@ let rand = 1; //min~maxの間のランダムな少数の間隔でクリック
   });
   // ログイン画面でログイン
   await Promise.all([page.waitForNavigation(), await page.goto(LOGIN_URL)]);
-  await page.waitFor(10000); //一応1秒待つ
+  await page.waitFor(1000); //一応1秒待つ
   await page.type(LOGIN_USER_SELECTOR, LOGIN_USER); // ユーザー名入力
   await page.type(LOGIN_PASS_SELECTOR, LOGIN_PASS); // パスワード入力
   await Promise.all([
